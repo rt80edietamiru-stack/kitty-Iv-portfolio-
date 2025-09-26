@@ -29,6 +29,34 @@ a{
   text-decoration:none;
   font-weight:bold;
 }
-a hover{
+a:hover{
   text-decoration: underline;
+}
+button:hover {
+  background-color: #ff6699; /* New color when hovered */
+  transform: scale(1.05); /* Slightly bigger */
+  transition: 0.3s; /* Smooth animation */
+}
+
+a:hover {
+  color: #ff3399;
+  text-decoration: underline;
+}
+/* Import a Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
 }
