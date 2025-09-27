@@ -1,62 +1,72 @@
 <!DOCTYPE CSS>
-body{
-  font-family:Arial, sans-serif;
-  background-color:#f9f9f9;
-  color:#333;
-  margin:0;
-  padding:0;
-}
-header{
-  background:#1e90ff;
-  color: white;
-  padding:20px;
-  text-align:center;
-}
-main{
-  padding:20px;
-  max-width:800px;
-  margin:auto;
-}
-section {
-  margin-bottom:40px;
-  padding:20px;
-  background:white;
-  border-radius:8px;
-  box-shadow:0 2px 5px rgba(0,0,0,0.1);
-}
-a{
-  color:#1e90ff;
-  text-decoration:none;
-  font-weight:bold;
-}
-a:hover{
-  text-decoration: underline;
-}
-button:hover {
-  background-color: #ff6699; /* New color when hovered */
-  transform: scale(1.05); /* Slightly bigger */
-  transition: 0.3s; /* Smooth animation */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a:hover {
-  color: #ff3399;
-  text-decoration: underline;
-}
-/* Import a Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
+/* Body */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
+  background-color: #f9f9f9;
   color: #333;
+  padding-top: 60px; /* so content doesn’t hide behind navbar */
 }
 
-h1, h2, h3 {
-  font-weight: 600;
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #333;
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff9800;
+}
+
+/* Sections */
+section {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h1 {
   margin-bottom: 15px;
+  color: #444;
 }
 
-p {
-  font-size: 16px;
-  letter-spacing: 0.5px;
+/* Projects */
+.project {
+  margin-bottom: 20px;
+}
+
+.project h2 {
+  color: #555;
+  margin-bottom: 5px;
 }
